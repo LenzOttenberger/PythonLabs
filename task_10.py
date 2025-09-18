@@ -1,0 +1,8 @@
+a = int(input('Enter a: '))
+b = int(input('Enter b: '))
+print(f'Summ {a+b}')
+print(f'Diff {a-b}')
+print(f'Mult {a*b}')
+print(f'Div {a/b}')
+print(f'Rem from div {a%b}')
+print(f'Degree {a**b}')
