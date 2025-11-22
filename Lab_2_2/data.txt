@@ -1,0 +1,8 @@
+========SAVED DATA========
+==========================
+John statistic:
+Math: 44
+Language: 77
+Physics: 54
+Speciality: cm
+Status: True
