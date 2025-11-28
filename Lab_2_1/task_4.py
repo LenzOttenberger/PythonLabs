@@ -1,0 +1,15 @@
+firstListOfNumbers = str(input('Enter first string of numbers: ')).split()
+secondListOfNumbers = str(input('Enter second string of numbers: ')).split()
+firstSetOfUniqueNumbers = set(firstListOfNumbers)
+secondSetOfUniqueNumbers = set(secondListOfNumbers)
+print(firstSetOfUniqueNumbers)
+print(secondSetOfUniqueNumbers)
+listOfIdenticalNumbers = list(
+    firstSetOfUniqueNumbers & secondSetOfUniqueNumbers)
+print(f'1. Identical numbers {listOfIdenticalNumbers}')
+for item in listOfIdenticalNumbers:
+    firstSetOfUniqueNumbers.remove(item)
+    secondSetOfUniqueNumbers.remove(item)
+print(f'2.1 Unique numbers from the first set: {firstSetOfUniqueNumbers}')
+print(f'2.2 Unique numbers from the second set: {secondSetOfUniqueNumbers}')
+print(f'3. {firstSetOfUniqueNumbers | secondSetOfUniqueNumbers}')
